@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -57,7 +57,7 @@ main {
     display: flex;
     justify-content: center; 
     gap: 10px;
-    margin-top: 20px; /* Отступ сверху для улучшения визуального восприятия */
+    margin-top: 20px; 
 }
 
 footer {
@@ -87,14 +87,58 @@ h1{
 }
 .recentgallery {
     overflow: hidden;
+    padding-left: 120px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
+
+.recentgallery a {
+    display: block;
+}
+
 .recentgallery img {
     width: 165px;
-    height: auto;
+    height: 100px;
     transition: transform 0.5s;
     margin: 20px; 
 }
 .recentgallery :hover img {
     transform: scale(1.2)
+}
+
+
+.news-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid gray; 
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    margin-left: -250px;
+}
+
+.news-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.news-item {
+    margin-bottom: 15px;
+    word-wrap: break-word; 
+    max-width: 900px; 
+    line-height: 1.5; 
+}
+
+.news-item p {
+    margin: 5px 0;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.divider {
+    border: 1px solid #ddd;
+    margin: 15px 0;
 }
